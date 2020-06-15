@@ -12,30 +12,37 @@
 # # # Feel free to customize! # # #
 # # # # # # # # # # # # # # # # # #
 
+
+# To easily discover colors and their codes, type `spectrum_ls` in the terminal
+
 export AT_SYMBOL=" at "
 export IN_SYMBOL=" in "
 export ON_SYMBOL=" on "
-export BRANCH_COLOR="%{$fg[007]%}"
-export TIME_COLOR="%{$fg[007]%}"
 export SYMBOL=">"
 
+export USER_COLOR="%{$FG[001]%}"
+export DEVICE_COLOR="%{$FG[033]%}"
+export DIR_COLOR="%{$FG[220]%}"
+export BRANCH_COLOR="%{$FG[007]%}"
+export TIME_COLOR="%{$FG[007]%}"
+
 username() {
-   echo "%{$FG[001]%}%n%{$reset_color%}"
+   echo "$USER_COLOR%n%{$reset_color%}"
 }
 
 # Returns device name 
 device() {
-   echo "%{$FG[033]%}%m%{$reset_color%}"
+   echo "$DEVICE_COLOR%m%{$reset_color%}"
 }
 
 # The current directory
 directory() {
-   echo "%{$FG[220]%}%1~%{$reset_color%}"
+   echo "$DIR_COLOR%1~%{$reset_color%}"
 }
 
 # Current time with milliseconds
 current_time() {
-   echo "${TIME_COLOR}%*%{$reset_color%}"
+   echo "$TIME_COLOR%*%{$reset_color%}"
 }
 
 # Return status of the last command
