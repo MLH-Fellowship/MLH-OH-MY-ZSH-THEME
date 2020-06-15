@@ -2,7 +2,7 @@
 
 The official Oh My Zsh MLH theme!
 
-![theme demo](https://i.imgur.com/aWbE70Y.png)
+![theme demo](https://i.imgur.com/IWa9cgv.png)
 
 **Install**
 
