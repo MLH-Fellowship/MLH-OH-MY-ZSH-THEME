@@ -1,26 +1,27 @@
 # MLH-OH-MY-ZSH-THEME
 
-The official Oh My Zsh MLH theme!
+The Official MLH [Oh My ZSH](https://ohmyz.sh/) theme!
 
-![theme demo](https://i.imgur.com/IWa9cgv.png)
+<p align="center">
+  <img src="https://i.imgur.com/IWa9cgv.png">
+</p>
 
 **Install**
 
-1. `git clone` this repository somewhere
-2. Put `mlh.zsh-theme` undeer `~/.oh-my-zsh/custom/themes`
-3. In your `~/.zshrc`, set `ZSH_THEME="mlh"`
+1. `git clone https://github.com/MLH-Fellowship/MLH-OH-MY-ZSH-THEME.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/mlh` 
+
+2. Set `ZSH_THEME="mlh/mlh"` in `~/.zshrc`.
 
 **Contribute**
 
-We suggest the following setup if you want to contributee to the theme
+We suggest the following setup if you want to contribute to the theme.
 
-1. `git clone` this repository somewhere. For this example, we'll assume that you
-   will have it under `~/dev/shell/MLH-OH-MY-ZSH-THEME`
+1. `git clone https://github.com/MLH-Fellowship/MLH-OH-MY-ZSH-THEME.git`
 
-2. Make a symbolic link from this repository's directory to oh-my-zsh's custom themes directory
+2. `cd MLH-OH-MY-ZSH-THEME`
 
-   `ln -s ~/dev/shell/MLH-OH-MY-ZSH-THEME/mlh.zsh-theme ~/.oh-my-zsh/custom/themes/mlh.zsh-theme`
+3. `ln -s $PWD/mlh.zsh-theme ~/.oh-my-zsh/custom/themes/mlh/mlh.zsh-theme`
 
-3. In your `~/.zshrc`, set `ZSH_THEME="mlh"`
+4. Set `ZSH_THEME="mlh/mlh"` in `~/.zshrc`
 
-4. You should be good to go! To see any changes you made to the theme, do `exec zsh`.
+5. `exec zsh`
